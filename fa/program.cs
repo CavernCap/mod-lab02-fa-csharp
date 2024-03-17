@@ -105,10 +105,10 @@ namespace fans
         {
             qstart.Transitions['0'] = q0;
             qstart.Transitions['1'] = q1;
-            q0.Transitions['0'] = q0;
+            q0.Transitions['0'] = qstart;
             q0.Transitions['1'] = qend;
             q1.Transitions['0'] = qend;
-            q1.Transitions['1'] = q0;
+            q1.Transitions['1'] = qstart;
             qend.Transitions['0'] = q1;
             qend.Transitions['1'] = q0;
         }
